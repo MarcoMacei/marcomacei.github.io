@@ -13,13 +13,13 @@ a:link{
 }
 /*Background do site*/
 #cover{
-    background-image: url(images/cover.jpg);
+    background-image: url(cover.jpg);
         background-repeat: no-repeat;
             background-attachment: fixed;
                 background-position: center;
 }
 #othersCover{
-    background-image: url(images/cover2.jpg);
+    background-image: url(cover2.jpg);
         background-attachment: fixed;
                 background-position: center;
 }
