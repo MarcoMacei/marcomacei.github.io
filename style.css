@@ -236,8 +236,8 @@ footer p{
     text-align: center;
     font-size: 14px;
 }
-@media(max-width: 1023px){
-    /*Enquanto menor a 1023px, o código abaixo que será usado*/
+@media(max-width: 1022px){
+    /*Enquanto menor a 1022px, o código abaixo que será usado*/
     header{
         background-color: #0b354e; /*Esse é o azul do MM*/
     }
@@ -327,7 +327,7 @@ footer p{
         font-size: 15px;
     }
 }
-@media(width: 1024px){
+@media(width: 1023px){
     #about{
         width: 666px;
         height: 315px;
