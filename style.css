@@ -329,7 +329,7 @@ footer p{
 }
 @media(width: 1024px){
     #about{
-        width: 666px;
+        width: 100%;
         height: 315px;
     }
     #about p{
