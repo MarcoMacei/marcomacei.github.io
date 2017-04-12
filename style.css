@@ -169,26 +169,28 @@ p{
     color: #0b354e; /*Esse é o azul do MM*/
 }
 /*Sobre*/
-#about{
-    border-radius: 10px;
-    width: 900px;
-    height: 400px;
-    float: left;
-    margin-left: 35px;
-    position: static;
-    transition: all .5s;
-}
-#about:hover{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-#about p{
-    font-size: 23.5px;
-    text-align: justify;
-    color: #ffffff;
-    float: right;
-    position: static;
-    width: 850px;
-    padding-right: 25px;
+@media(min-width: 1340px){
+    #about{
+        border-radius: 10px;
+        width: 900px;
+        height: 400px;
+        float: left;
+        margin-left: 35px;
+        position: static;
+        transition: all .5s;
+    }
+    #about:hover{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #about p{
+        font-size: 23.5px;
+        text-align: justify;
+        color: #ffffff;
+        float: right;
+        position: static;
+        width: 850px;
+        padding-right: 25px;
+    }
 }
 #photo{
     float: left;
@@ -235,6 +237,7 @@ footer p{
     font-size: 14px;
 }
 @media(min-width: 1025px){
+    /*Enquanto maior que 1025px*/
     #about{
         width: 668px;
         height: 315px;
