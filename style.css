@@ -234,3 +234,122 @@ footer p{
     text-align: center;
     font-size: 14px;
 }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/04/2017, 04:06:59
+    Author     : marco
+*/
+@media(width: 1024px){
+    #about{
+        width: 668px;
+        height: 315px;
+    }
+    #about p{
+        font-size: 18px;
+        text-align: justify;
+        color: #ffffff;
+        float: right;
+        position: static;
+        width: 618px;
+        padding-right: 25px;
+    }
+}
+@media(max-width: 1024px){
+    /*Enquanto menor ou igual a 768px o código abaixo que será usado*/
+    header{
+        background-color: #0b354e; /*Esse é o azul do MM*/
+    }
+    header label{
+        display: block;
+    }
+    .menu ul{
+        position: absolute;
+        background-color: #0b354e; /*Esse é o azul do MM*/
+        width: 25%;
+        flex-direction: column; /*O menu ficará em coluna*/
+        margin-left: -25%; /*Esconde o menu*/
+    }
+    .menu ul li a{
+        border-top: 1px solid #ffffff;
+        font-size: 20px;
+        color: #ffffff;
+        padding: 3px;
+    }
+    .menu ul li a:hover{
+        background-color: #3b3b3b;
+    }
+    #btn-menu:checked ~ .menu ul{
+        margin-left: 0; /*Faz o menu aparecer somente quando clicar no símbolo de menu*/ 
+    }
+    #socialicon ul li a{
+        padding: 5px 15px;
+        display: block;
+    }
+    #socialicon img{
+        width: 70px;
+    }
+    #socialicon img:hover{
+        /*Zoom de aumento de 30%*/
+        -webkit-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            transform: scale(1.3);
+    }
+    #logo img{
+        width: 80px;
+    }
+    #photo{
+        float: left;
+        border-radius: 10px;
+        margin-left: 15px;
+        width: 250px;
+    }
+    #about{
+        width: 468px;
+        height: 315px;
+    }
+    #about p{
+        font-size: 15px;
+        text-align: justify;
+        color: #ffffff;
+        float: right;
+        position: static;
+        width: 418px;
+        padding-right: 25px;
+    }
+    h1{
+        font-family: Book Antiqua, sans-serif;
+        font-size: 35px;
+        color: #0b354e; /*Esse é o azul do MM*/
+        margin-right: 15px;
+        text-align: right;
+    }
+    #works img{
+        width: 200px;
+        margin-top: 10px;
+    }
+    .letter{
+        font-size: 15px;
+    }
+    #phone{
+        margin-left: 90px;
+    }
+    #phone p{
+        font-size: 15px;
+    }
+    input[type=text]{
+        width: 300px;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    textarea{
+        width: 300px;
+        height: 80px;
+    }
+    label{
+        font-size: 15px;
+    }
+}
