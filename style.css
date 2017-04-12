@@ -329,7 +329,7 @@ footer p{
         font-size: 15px;
     }
 }
-@media(width: 1024px){
+@media(max-width: 1360px){
     #about{
         width: 668px;
         height: 315px;
