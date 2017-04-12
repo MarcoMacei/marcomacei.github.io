@@ -234,7 +234,7 @@ footer p{
     text-align: center;
     font-size: 14px;
 }
-@media(max-width: 767px){
+@media(max-width: 1024px){
     /*Enquanto menor ou igual a 768px o código abaixo que será usado*/
     header{
         background-color: #0b354e; /*Esse é o azul do MM*/
