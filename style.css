@@ -236,7 +236,7 @@ footer p{
     text-align: center;
     font-size: 14px;
 }
-@media(min-width: 1025px){
+@media(min-width: 1025px max-width: 1340px){
     /*Enquanto maior que 1025px*/
     #about{
         width: 668px;
