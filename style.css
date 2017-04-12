@@ -296,7 +296,7 @@ footer p{
         float: right;
         position: static;
         width: 418px;
-        padding-right: 25px;
+        padding-right: 15px;
     }
     h1{
         font-family: Book Antiqua, sans-serif;
@@ -343,6 +343,6 @@ footer p{
         float: right;
         position: static;
         width: 616px;
-        padding-right: 25px;
+        padding-right: 15px;
     }
 }
