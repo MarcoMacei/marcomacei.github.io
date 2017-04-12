@@ -234,21 +234,6 @@ footer p{
     text-align: center;
     font-size: 14px;
 }
-@media(width: 1024px){
-    #about{
-        width: 668px;
-        height: 315px;
-    }
-    #about p{
-        font-size: 18px;
-        text-align: justify;
-        color: #ffffff;
-        float: right;
-        position: static;
-        width: 618px;
-        padding-right: 25px;
-    }
-}
 @media(max-width: 1023px){
     /*Enquanto menor a 1024px o código abaixo que será usado*/
     header{
@@ -342,5 +327,20 @@ footer p{
     }
     label{
         font-size: 15px;
+    }
+}
+@media(width: 1024px){
+    #about{
+        width: 668px;
+        height: 315px;
+    }
+    #about p{
+        font-size: 18px;
+        text-align: justify;
+        color: #ffffff;
+        float: right;
+        position: static;
+        width: 618px;
+        padding-right: 25px;
     }
 }
