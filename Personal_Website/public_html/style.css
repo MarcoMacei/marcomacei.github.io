@@ -1,0 +1,336 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05/04/2017, 21:05:39
+    Author     : marco
+*/
+body{
+    margin: 0; /*Tira qualquer margem que o navegador tenha dado*/
+}
+/*Para qualquer link*/
+a:link{
+    text-decoration: none; /*Tira o sublinhado de todos os links*/
+}
+/*Para qualquer ul*/
+ul{
+   list-style: none; /*Tira o estilo da lista*/ 
+}
+/*Background do site*/
+#cover{
+    background-image: url(images/cover.jpg);
+        background-repeat: no-repeat;
+            background-attachment: fixed;
+                background-position: center;
+                    background-size: cover; /*Css padrão*/
+                        -webkit-background-size: cover; /*Css safari e chrome*/
+                        -moz-background-size: cover; /*Css firefox*/
+                        -ms-background-size: cover; /*Css IE*/
+                        -o-background-size: cover; /*Css Opera*/
+}
+#othersCover{
+    background-image: url(images/cover2.jpg);
+        background-repeat: no-repeat;
+            background-attachment: fixed;
+                background-position: center;
+                    background-size: cover; /*Css padrão*/
+                            -webkit-background-size: cover; /*Css safari e chrome*/
+                            -moz-background-size: cover; /*Css firefox*/
+                            -ms-background-size: cover; /*Css IE*/
+                            -o-background-size: cover; /*Css Opera*/
+}
+
+/*Menu Superior*/
+#btn-menu{
+    display: none; /*neste caso, tirou a caixa de checagem*/
+}
+header label{
+    color: #ffffff;
+    font-size: 30px;
+    display: block;
+    width: 26px;
+    border-right: 1px solid #ffffff;
+    display: none; /*Esconde o menu dropdwn*/
+}
+header label:hover{
+    background-color: #3b3b3b;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /*Alinha bo fim da linha, neste caso à direita*/
+    transition: all .5s;
+}
+.menu ul li a{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #3b3b3b;
+    padding: 10px 20px;
+    display: block;
+}
+/*Para quando o mouse estiver em cima de um link do menu*/
+.menu ul li a:hover{
+    color: #ffffff;
+}
+/*ìcones Redes Sociais*/
+#socialicon ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 20%;
+    align-items: flex-start;
+    bottom: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+#socialicon ul li a{
+    padding: 10px 30px;
+    display: block;
+}
+#socialicon img{
+    width: 100px;
+    transition: .5s;
+}
+#socialicon img:hover{
+    /*Zoom de aumento de 30%*/
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+/*Formulário Contato*/
+#contato{
+    float: left;
+    margin-left: 25px;
+}
+.letter{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 25px;
+}
+label, input[type=submit], input[type=text], textarea{
+    display: block; /*Exibe em blocos, um embaixo do outro*/
+}
+input[type=submit], input[type=text], textarea{
+    display: block; /*Exibe em blocos, um embaixo do outro*/
+    border: 1px solid #9b9b9b;
+    border-radius: 5px; /*Arredonda a borda*/
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+label{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+input[type=text]{
+    width: 400px;
+    height: 25px;
+    margin-bottom: 20px;
+}
+input[type=submit]{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    background-color: #0b354e;
+    padding: 12px 15px;
+    margin-top: 15px;
+}
+input[type=submit]:hover{
+    background-color: #08273a;
+}
+textarea{
+    width: 400px;
+    height: 100px;
+}
+#phone{
+    float: left;
+    margin-left: 230px;
+}
+#phone p{
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: right;
+}
+/*Conteúdo do site*/
+h1{
+    font-family: Book Antiqua, sans-serif;
+    font-size: 35px;
+    color: #0b354e; /*Esse é o azul do MM*/
+    margin-left: 25px;
+}
+p{
+    font-family: Book Antiqua, sans-serif;
+    color: #0b354e; /*Esse é o azul do MM*/
+}
+/*Sobre*/
+#about{
+    border-radius: 10px;
+    width: 900px;
+    height: 400px;
+    float: right;
+    margin-right: 35px;
+    position: static;
+    transition: all .5s;
+}
+#about:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#about p{
+    font-size: 23.5px;
+    text-align: justify;
+    color: #ffffff;
+    float: right;
+    position: static;
+    width: 850px;
+    padding-right: 25px;
+}
+#photo{
+    float: left;
+    border-radius: 10px;
+    margin-left: 35px;
+}
+/*Portfolio*/
+#works ul{
+    text-align: center; /*Para centralizar a lista*/
+}
+#works ul li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    padding: 10px 50px;
+}
+#works img{
+    width: 250px;
+    margin-top: 10px;
+    transition: all .5s;
+}
+#works img:hover{
+    /*Zoom de aumento de 30%*/
+    -webkit-transform: scale(1.20);
+        -ms-transform: scale(1.20);
+        transform: scale(1.20);
+}
+/*Logo inferior*/
+#logo{
+    display: flex;
+    justify-content: center;
+}
+#logo img{
+    width: 100px;
+}
+/*Rodapé do site*/
+footer{
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+}
+footer p{
+    text-align: center;
+    font-size: 14px;
+}
+@media(max-width: 768px){
+    /*Enquanto menor ou igual a 768px o código abaixo que será usado*/
+    header{
+        background-color: #0b354e; /*Esse é o azul do MM*/
+    }
+    header label{
+        display: block;
+    }
+    .menu ul{
+        position: absolute;
+        background-color: #0b354e; /*Esse é o azul do MM*/
+        width: 25%;
+        flex-direction: column; /*O menu ficará em coluna*/
+        margin-left: -25%; /*Esconde o menu*/
+    }
+    .menu ul li a{
+        border-top: 1px solid #ffffff;
+        font-size: 20px;
+        color: #ffffff;
+        padding: 3px;
+    }
+    .menu ul li a:hover{
+        background-color: #3b3b3b;
+    }
+    #btn-menu:checked ~ .menu ul{
+        margin-left: 0; /*Faz o menu aparecer somente quando clicar no símbolo de menu*/ 
+    }
+    #socialicon ul li a{
+        padding: 5px 15px;
+        display: block;
+    }
+    #socialicon img{
+        width: 70px;
+    }
+    #socialicon img:hover{
+        /*Zoom de aumento de 30%*/
+        -webkit-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            transform: scale(1.3);
+    }
+    #logo img{
+        width: 80px;
+    }
+    #photo{
+        float: left;
+        border-radius: 10px;
+        margin-left: 15px;
+        width: 250px;
+    }
+    #about{
+        border-radius: 10px;
+        width: 468px;
+        height: 315px;
+        float: right;
+        margin-right: 15px;
+        position: static;
+        transition: all .5s;
+    }
+    #about p{
+        font-size: 15px;
+        text-align: justify;
+        color: #ffffff;
+        float: right;
+        position: static;
+        width: 418px;
+        padding-right: 25px;
+    }
+    h1{
+        font-family: Book Antiqua, sans-serif;
+        font-size: 35px;
+        color: #0b354e; /*Esse é o azul do MM*/
+        margin-right: 15px;
+        text-align: right;
+    }
+    #works img{
+        width: 200px;
+        margin-top: 10px;
+    }
+    .letter{
+        font-size: 15px;
+    }
+    #phone{
+        margin-left: 90px;
+    }
+    #phone p{
+        font-size: 15px;
+    }
+    input[type=text]{
+        width: 300px;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    textarea{
+        width: 300px;
+        height: 80px;
+    }
+    label{
+        font-size: 15px;
+    }
+}
