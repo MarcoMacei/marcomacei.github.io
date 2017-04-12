@@ -25,10 +25,11 @@ ul{
             background-attachment: fixed;
                 background-position: center;
                     background-size: cover; /*Css padrão*/
-                        -webkit-background-size: cover; /*Css safari e chrome*/
-                        -moz-background-size: cover; /*Css firefox*/
-                        -ms-background-size: cover; /*Css IE*/
-                        -o-background-size: cover; /*Css Opera*/
+                            -webkit-background-size: cover; /*Css safari e chrome*/
+                            -moz-background-size: cover; /*Css firefox*/
+                            -ms-background-size: cover; /*Css IE*/
+                            -khtml-background-size: cover;
+                            -o-background-size: cover; /*Css Opera*/
 }
 #othersCover{
     background-image: url(cover2.jpg);
@@ -39,6 +40,7 @@ ul{
                             -webkit-background-size: cover; /*Css safari e chrome*/
                             -moz-background-size: cover; /*Css firefox*/
                             -ms-background-size: cover; /*Css IE*/
+                            -khtml-background-size: cover;
                             -o-background-size: cover; /*Css Opera*/
 }
 
