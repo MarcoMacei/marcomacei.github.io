@@ -187,10 +187,10 @@ p{
     font-size: 23.5px;
     text-align: justify;
     color: #ffffff;
-    float: right;
+    float: left;
     position: static;
     width: 850px;
-    padding-right: 25px;
+    padding-left: 25px;
 }
 #photo{
     float: left;
@@ -291,10 +291,6 @@ footer p{
     }
     #about p{
         font-size: 15px;
-        text-align: justify;
-        color: #ffffff;
-        float: right;
-        position: static;
         width: 418px;
         padding-right: 15px;
     }
@@ -338,11 +334,7 @@ footer p{
     }
     #about p{
         font-size: 18px;
-        text-align: justify;
-        color: #ffffff;
-        float: right;
-        position: static;
         width: 616px;
-        padding-right: 15px;
+        padding-left: 15px;
     }
 }
