@@ -176,7 +176,7 @@ p{
     width: 900px;
     height: 400px;
     float: left;
-    margin-left: 35px;
+    margin-left: 25px;
     position: static;
     transition: all .5s;
 }
