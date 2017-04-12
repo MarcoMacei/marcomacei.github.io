@@ -234,7 +234,7 @@ footer p{
     text-align: center;
     font-size: 14px;
 }
-@media(width: 1025px-1340px){
+@media(width: 1024px){
     #about{
         width: 668px;
         height: 315px;
