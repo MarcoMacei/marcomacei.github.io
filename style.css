@@ -249,8 +249,8 @@ footer p{
         padding-right: 25px;
     }
 }
-@media(max-width: 1024px){
-    /*Enquanto menor ou igual a 1024px o código abaixo que será usado*/
+@media(max-width: 1023px){
+    /*Enquanto menor a 1024px o código abaixo que será usado*/
     header{
         background-color: #0b354e; /*Esse é o azul do MM*/
     }
