@@ -9,8 +9,6 @@ and open the template in the editor.
 */
 body{
     margin: 0; /*Tira qualquer margem que o navegador tenha dado*/
-    width: 100vh;
-    height: 100vh;
 }
 /*Para qualquer link*/
 a:link{
@@ -26,24 +24,24 @@ ul{
         background-repeat: no-repeat;
             background-attachment: fixed;
                 background-position: center;
-                    background-size: contain; /*Css padrão*/
-                            -webkit-background-size: contain; /*Css safari e chrome*/
-                            -moz-background-size: contain; /*Css firefox*/
-                            -ms-background-size: contain; /*Css IE*/
-                            -khtml-background-size: contain;
-                            -o-background-size: contain; /*Css Opera*/
+                    background-size: cover; /*Css padrão*/
+                            -webkit-background-size: cover; /*Css safari e chrome*/
+                            -moz-background-size: cover; /*Css firefox*/
+                            -ms-background-size: cover; /*Css IE*/
+                            -khtml-background-size: cover;
+                            -o-background-size: cover; /*Css Opera*/
 }
 #othersCover{
     background-image: url(cover2.jpg);
         background-repeat: no-repeat;
             background-attachment: fixed;
                 background-position: center;
-                    background-size: contain; /*Css padrão*/
-                            -webkit-background-size: contain; /*Css safari e chrome*/
-                            -moz-background-size: contain; /*Css firefox*/
-                            -ms-background-size: contain; /*Css IE*/
-                            -khtml-background-size: contain;
-                            -o-background-size: contain; /*Css Opera*/
+                    background-size: cover; /*Css padrão*/
+                            -webkit-background-size: cover; /*Css safari e chrome*/
+                            -moz-background-size: cover; /*Css firefox*/
+                            -ms-background-size: cover; /*Css IE*/
+                            -khtml-background-size: cover;
+                            -o-background-size: cover; /*Css Opera*/
 }
 
 /*Menu Superior*/
