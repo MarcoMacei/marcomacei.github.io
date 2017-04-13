@@ -26,24 +26,24 @@ ul{
         background-repeat: no-repeat;
             background-attachment: fixed;
                 background-position: center;
-                    background-size: cover; /*Css padrão*/
-                            -webkit-background-size: cover; /*Css safari e chrome*/
-                            -moz-background-size: cover; /*Css firefox*/
-                            -ms-background-size: cover; /*Css IE*/
-                            -khtml-background-size: cover;
-                            -o-background-size: cover; /*Css Opera*/
+                    background-size: contain; /*Css padrão*/
+                            -webkit-background-size: contain; /*Css safari e chrome*/
+                            -moz-background-size: contain; /*Css firefox*/
+                            -ms-background-size: contain; /*Css IE*/
+                            -khtml-background-size: contain;
+                            -o-background-size: contain; /*Css Opera*/
 }
 #othersCover{
     background-image: url(cover2.jpg);
         background-repeat: no-repeat;
             background-attachment: fixed;
                 background-position: center;
-                    background-size: cover; /*Css padrão*/
-                            -webkit-background-size: cover; /*Css safari e chrome*/
-                            -moz-background-size: cover; /*Css firefox*/
-                            -ms-background-size: cover; /*Css IE*/
-                            -khtml-background-size: cover;
-                            -o-background-size: cover; /*Css Opera*/
+                    background-size: contain; /*Css padrão*/
+                            -webkit-background-size: contain; /*Css safari e chrome*/
+                            -moz-background-size: contain; /*Css firefox*/
+                            -ms-background-size: contain; /*Css IE*/
+                            -khtml-background-size: contain;
+                            -o-background-size: contain; /*Css Opera*/
 }
 
 /*Menu Superior*/
