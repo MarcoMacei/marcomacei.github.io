@@ -325,4 +325,10 @@ footer p{
         width: 596px;
         padding-left: 15px;
     }
+    #phone{
+        margin-left: 70px;
+    }
+    #phone p{
+        font-size: 13px;
+    }
 }
