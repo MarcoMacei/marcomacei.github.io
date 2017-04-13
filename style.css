@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 body{
     margin: 0; /*Tira qualquer margem que o navegador tenha dado*/
-    width: 100%;
+    width: 100vh;
     height: 100vh;
 }
 /*Para qualquer link*/
