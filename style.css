@@ -134,7 +134,6 @@ input[type=text]{
     margin-bottom: 20px;
 }
 input[type=submit]{
-    font-family: Arial, sans-serif;
     font-size: 16px;
     color: #ffffff;
     cursor: pointer;
@@ -164,6 +163,7 @@ h1, p{
     font-family: 'Comfortaa', cursive, sans-serif;
 }
 h1{
+    font-weight: bold; 
     font-size: 35px;
     color: #0b354e; /*Esse é o azul do MM*/
     margin-left: 25px;
