@@ -151,10 +151,10 @@ textarea{
 }
 #phone{
     float: left;
-    margin-left: 230px;
+    margin-left: 200px;
 }
 #phone p{
-    font-size: 20px;
+    font-size: 21px;
     margin-top: 30px;
     text-align: right;
 }
@@ -185,7 +185,7 @@ p{
     background-color: rgba(0, 0, 0, 0.5);
 }
 #about p{
-    font-size: 23.5px;
+    font-size: 23px;
     text-align: justify;
     color: #ffffff;
     float: left;
@@ -266,23 +266,14 @@ footer p{
     }
     #socialicon ul li a{
         padding: 5px 15px;
-        display: block;
     }
     #socialicon img{
         width: 70px;
-    }
-    #socialicon img:hover{
-        /*Zoom de aumento de 30%*/
-        -webkit-transform: scale(1.3);
-            -ms-transform: scale(1.3);
-            transform: scale(1.3);
     }
     #logo img{
         width: 80px;
     }
     #photo{
-        float: left;
-        border-radius: 10px;
         margin-left: 15px;
         width: 250px;
     }
@@ -296,15 +287,11 @@ footer p{
         padding-right: 15px;
     }
     h1{
-        font-family: Book Antiqua, sans-serif;
-        font-size: 35px;
-        color: #0b354e; /*Esse é o azul do MM*/
         margin-right: 15px;
         text-align: right;
     }
     #works img{
         width: 200px;
-        margin-top: 10px;
     }
     .letter{
         font-size: 15px;
