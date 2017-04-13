@@ -20,7 +20,7 @@ ul{
 }
 /*Background do site*/
 #cover{
-    background-image: url(cover.jpg);
+    background-image: url(coverHD.jpg);
         background-repeat: no-repeat;
             background-attachment: fixed;
                 background-position: center;
@@ -120,7 +120,7 @@ input[type=submit], input[type=text], textarea{
     display: block; /*Exibe em blocos, um embaixo do outro*/
     border: 1px solid #9b9b9b;
     border-radius: 5px; /*Arredonda a borda*/
-    font-family: Arial, sans-serif;
+    font-family: 'Comfortaa', cursive, sans-serif;
     font-size: 14px;
 }
 label{
@@ -160,14 +160,15 @@ textarea{
     text-align: right;
 }
 /*Conteúdo do site*/
+h1, p{
+    font-family: 'Comfortaa', cursive, sans-serif;
+}
 h1{
-    font-family: Book Antiqua, sans-serif;
     font-size: 35px;
     color: #0b354e; /*Esse é o azul do MM*/
     margin-left: 25px;
 }
 p{
-    font-family: Book Antiqua, sans-serif;
     color: #0b354e; /*Esse é o azul do MM*/
 }
 /*Sobre*/
