@@ -320,10 +320,10 @@ footer p{
 @media(width: 1024px){
     #about{
         width: 616px;
-        height: 315px;
+        height: 345px;
     }
     #about p{
-        font-size: 16px;
+        font-size: 17px;
         width: 596px;
         padding-left: 15px;
     }
