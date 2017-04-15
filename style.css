@@ -180,11 +180,13 @@ p{
     float: left;
     margin-left: 25px;
     position: static;
-    transition: all .5s;
+    background-color: rgba(155, 155, 155, 0.5);
 }
+/*
 #about:hover{
     background-color: rgba(155, 155, 155, 0.5);
 }
+*/
 #about p{
     font-size: 23px;
     text-align: justify;
