@@ -4,84 +4,118 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="pt-br">
     <head>
         <title>Sobre - Marco Macei</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Marco Aurélio Macei Duarte"/>
-        <meta name="description" content="Website pessoal de Marco Macei para apresentar seus projetos"/>
-        <meta name="keywords" content="website, Marco Macei, projetos, currículo, portfolio"/>
-        <link href="normalize.css" rel="stylesheet" type="text/css"/>
+        <meta name="description" content="Página sobre Marco Macei, seus projetos e conhecimentos"/>
+        <meta name="keywords" content="website, Marco Macei, projetos, currículo, portfolio, contato, currículo, HTML, CSS"/>
         <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"/>
         <link href="style.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" href="favicon.png" type="image/x-png"/> <!--ícone na aba-->
     </head>
     <body id="othersCover">
-        <header>
-            <!--
-            Menu Superior
-            -->
-            <input type="checkbox" id="btn-menu"/>
-            <label for="btn-menu">&#9776;</label>
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="index.html" title="Home">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html" title="Sobre">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html" title="Portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" title="Contato">Contato</a>
-                    </li>
-                    <li>
-                        <a href="Marco_Currículo.pdf" title="Currículo" target="_blank">Currículo</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!--
-        Texto do site
-        -->
-        <h1>
-            Sobre
-        </h1>
-
-        <img src="ME.jpg" id="photo" alt="Marco" title="Marco Macei"/>
-
-        <div id="about">
-            <p>
-                Meu nome é Marco Aurélio Macei Duarte, nasci em 6 de fevereiro de 1985, na cidade de Mogi das Cruzes.
-                Possuo uma boa experiência na área administrativa adquirida durante o período em que trabalhei
-                no setor público. Além disso, possuo conhecimento em manutenção de microcomputadores e notebooks, 
-                pois há mais de 5 anos trabalho realizando esta atividade. 
-                Também tenho conhecimento nas linguagens de programação Java, C, C++ e em HTML5 e CSS3.
-                Por ser um ávido leitor, produzi artigos sobre temas diversos, 
-                sendo dois deles destaques em sites especializados e um outro usado como tema de redação para um 
-                processo seletivo na Prefeitura Municipal de Andirá no Estado do Paraná.
-                Fiz este site com a finalidade de demonstrar meus conhecimentos e contribuir 
-                para o meu aprendizado como programador e espero que vocês gostem. Abraços!
-            </p>
-        </div>
-        <!--
-        Rodapé do site
-        -->
-        <footer>
-            <!--
-            Logo inferior
-            -->
-            <div id="logo">
-                <a href="index.html" title="Marco Macei">
-                    <img src="logo.png" alt="Logo" >
-                </a>
+        <!--Menu Superior-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <header>
+                        <input type="checkbox" id="btn-menu"/>
+                        <label for="btn-menu">&#9776;</label>
+                        <nav class="menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html" title="Home">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html" title="Sobre">Sobre</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html" title="Portfolio">Portfólio</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" title="Contato">Contato</a>
+                                </li>
+                                <li>
+                                    <a href="Marco_Currículo.pdf" title="Currículo" target="_blank">Currículo</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
             </div>
-            <p>
-                2017 - marcomacei.com
-            </p>
-        </footer>
+        </div>
+        
+        <!--Título da página-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>
+                        Sobre
+                    </h1>
+                </div>
+            </div>
+        </div>
+        
+        <!--Foto e descrição-->
+        <div class="container">
+            <div class="row">
+                <div class="col col-photo">
+                    <div id="photo">
+                        <img src="marco-site.jpg" alt="marco" title="Marco"/>
+                    </div>
+                </div>
+                <div class="col col-description">
+                    <p id="about-text">
+                        Meu nome é Marco Aurélio Macei Duarte, nasci em 6 de fevereiro de 1985, 
+                        na cidade de Mogi das Cruzes. Possuo uma boa experiência na área administrativa 
+                        adquirida durante o período em que trabalhei no setor público. 
+                        Além disso, possuo conhecimento em manutenção de microcomputadores e notebooks, 
+                        pois há mais de 5 anos trabalho realizando esta atividade. 
+                        Também tenho conhecimento nas linguagens de programação Java, C, C++ e em HTML5 e CSS3. 
+                        Por ser um ávido leitor, produzi artigos sobre temas diversos, 
+                        sendo dois deles destaques em sites especializados e um outro usado como tema de redação 
+                        para um processo seletivo na Prefeitura Municipal de Andirá no Estado do Paraná. 
+                        Fiz este site com a finalidade de demonstrar meus conhecimentos e contribuir para 
+                        o meu aprendizado como programador e espero que vocês gostem. Abraços! 
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="about-space"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Logo Inferior-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="logo-inferior">
+                        <a href="index.html" title="Marco Macei">
+                            <img src="logo.png" alt="Logo" >
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Rodapé-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer">
+                        <footer>
+                            <span>
+                                2017 - marcomacei.com
+                            </span>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

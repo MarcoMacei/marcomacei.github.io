@@ -4,89 +4,127 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="pt-br">
     <head>
         <title>Portfolio - Marco Macei</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Marco Aurélio Macei Duarte"/>
-        <meta name="description" content="Website pessoal de Marco Macei para apresentar seus projetos"/>
-        <meta name="keywords" content="website, Marco Macei, projetos, currículo, portfolio"/>
-        <link href="normalize.css" rel="stylesheet" type="text/css"/>
+        <meta name="description" content="Portfolio de Marco Macei para apresentar seus projetos"/>
+        <meta name="keywords" content="website, Marco Macei, projetos, currículo, portfolio, contato, currículo, HTML, CSS"/>
         <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"/>
         <link href="style.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" href="favicon.png" type="image/x-png"/> <!--ícone na aba-->
     </head>
     <body id="othersCover">
-        <header>
-            <!--
-            Menu Superior
-            -->
-            <input type="checkbox" id="btn-menu"/>
-            <label for="btn-menu">&#9776;</label>
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="index.html" title="Home">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html" title="Sobre">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html" title="Portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" title="Contato">Contato</a>
-                    </li>
-                    <li>
-                        <a href="Marco_Currículo.pdf" title="Currículo" target="_blank">Currículo</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!--
-        Parte do Portfolio
-        -->
-        <div id="port">
-                <h1>
-                    Portfolio
-                </h1>
+        <!--Menu Superior-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <header>
+                        <input type="checkbox" id="btn-menu"/>
+                        <label for="btn-menu">&#9776;</label>
+                        <nav class="menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html" title="Home">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html" title="Sobre">Sobre</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html" title="Portfolio">Portfólio</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" title="Contato">Contato</a>
+                                </li>
+                                <li>
+                                    <a href="Marco_Currículo.pdf" title="Currículo" target="_blank">Currículo</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
             </div>
-        <!--
-        Trabalhos
-        -->
-        <p class="letter">
-            Clique nas imagens abaixo e veja os trabalhos desenvolvidos.
-        </p>
-        <div id="works">
-            <ul>
-                <li>
-                    <a href="https://github.com/MarcoMacei/Doadores_de_Sangue" target="_blank">
-                        <img src="doadores-icon.png" alt="doadores" title="Doadores de Sangue"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/MarcoMacei/Prova_Hotel" target="_blank">
-                        <img src="hotel-icon.png" alt="hotel" title="Hotel"/>
-                    </a>
-                </li>
-            </ul>
         </div>
-        <!--
-        Rodapé do site
-        -->
-        <footer>
-            <!--
-            Logo inferior
-            -->
-            <div id="logo">
-                <a href="index.html" title="Marco Macei">
-                    <img src="logo.png" alt="Logo" >
-                </a>
+        
+        <!--Título da página-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>
+                        Portfólio
+                    </h1>
+                </div>
             </div>
-            <p>
-                2017 - marcomacei.com
-            </p>
-        </footer>
+        </div>
+        
+        <!--Mensagem-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="message">
+                        <p>
+                            Clique nas imagens abaixo e veja os trabalhos desenvolvidos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Portfólio-->
+        <div class="container">
+            <div class="row">
+                <div class="col col-port">
+                    <div class="works">
+                        <a href="https://github.com/MarcoMacei/Doadores_de_Sangue" target="_blank">
+                            <img src="doadores-icon.png" alt="doadores" title="Doadores de Sangue"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-port">
+                    <div class="works">
+                        <a href="https://github.com/MarcoMacei/Prova_Hotel" target="_blank">
+                            <img src="hotel-icon.png" alt="hotel" title="Hotel"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!--Linha para trabalhos futuros, por enquanto será usada para criar um espaço entre
+                    o portfólio atual e o rodapé-->
+                    <div id="port-espace"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Logo Inferior-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="logo-inferior">
+                        <a href="index.html" title="Marco Macei">
+                            <img src="logo.png" alt="Logo" >
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Rodapé-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer">
+                        <footer>
+                            <span>
+                                2017 - marcomacei.com
+                            </span>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

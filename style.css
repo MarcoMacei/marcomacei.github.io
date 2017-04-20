@@ -4,20 +4,122 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 05/04/2017, 21:05:39
+    Created on : 16/04/2017, 21:58:52
     Author     : marco
 */
+/*Reset básico*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+/*Container*/
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+@media(min-width: 1170px){
+    .container{
+        max-width: 1170px;
+        padding: 0;
+    }
+}
+/*Linha*/
+.row{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+/*Altura da linha terá a altura do conteúdo*/
+.row:before, 
+.row:after{
+    content: "";
+    display: table;
+}
+.row:after{
+    clear: both;
+}
+/*Coluna*/
+.col{
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-right: -4px;
+    
+    *zoom: 1;
+    *display: inline;
+}
+@media(min-width: 768px){
+    /*Colunas Sobre*/
+    .col-photo{
+        width: 30%;
+    }
+    .col-description{
+        width: 70%;
+    }
+    /*Colunas Contato*/
+    .col-form-contact{
+        width: 40%;
+    }
+    .col-other-contact{
+        width: 60%;
+    }
+    /*Colunas Portfólio*/
+    .col-port{
+        width: 50%;
+    }
+}
+/*Itens Gerais*/
 body{
-    margin: 0; /*Tira qualquer margem que o navegador tenha dado*/
+    font-family: 'Comfortaa', cursive, sans-serif;
+    font-size: 62.5%;
+    color: #0b354e; /*cor azul do M logo*/
 }
 /*Para qualquer link*/
-a:link{
+a:link, a:active, a:visited{
     text-decoration: none; /*Tira o sublinhado de todos os links*/
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    color: #3b3b3b;
+}
+a:hover{
+    color: #ffffff;
 }
 /*Para qualquer ul*/
 ul{
    list-style: none; /*Tira o estilo da lista*/ 
 }
+img{
+    max-width: 100%; /*Qualquer imagem não passará do seu tamanho máximo*/
+    height: auto;
+}
+/*Título da página*/
+h1{
+    font-family: 'Comfortaa', cursive, sans-serif;
+    font-size: 2.4em;
+    color: #0b354e; /*Esse é o azul do MM*/
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+p{
+    font-family: 'Comfortaa', cursive, sans-serif;
+    color: #0b354e; /*Esse é o azul do MM*/
+}
+/*Mensagem do cabeçalho*/
+.message p{
+    text-align: left;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+/*Itens usado por todas páginas*/
+/*Covers*/
 /*Background do site*/
 #cover{
     background-image: url(coverHD.jpg);
@@ -25,11 +127,10 @@ ul{
             background-attachment: fixed;
                 background-position: center;
                     background-size: cover; /*Css padrão*/
-                            -webkit-background-size: cover; /*Css safari e chrome*/
-                            -moz-background-size: cover; /*Css firefox*/
-                            -ms-background-size: cover; /*Css IE*/
-                            -khtml-background-size: cover;
-                            -o-background-size: cover; /*Css Opera*/
+                        -webkit-background-size: cover; /*Css safari e chrome*/
+                        -moz-background-size: cover; /*Css firefox*/
+                        -ms-background-size: cover; /*Css IE*/
+                        -o-background-size: cover; /*Css Opera*/
 }
 #othersCover{
     background-image: url(cover2.jpg);
@@ -40,7 +141,6 @@ ul{
                             -webkit-background-size: cover; /*Css safari e chrome*/
                             -moz-background-size: cover; /*Css firefox*/
                             -ms-background-size: cover; /*Css IE*/
-                            -khtml-background-size: cover;
                             -o-background-size: cover; /*Css Opera*/
 }
 
@@ -50,7 +150,7 @@ ul{
 }
 header label{
     color: #ffffff;
-    font-size: 30px;
+    font-size: 3em;
     display: block;
     width: 26px;
     border-right: 1px solid #ffffff;
@@ -64,77 +164,109 @@ header label:hover{
     padding: 0;
     display: flex;
     justify-content: flex-end; /*Alinha bo fim da linha, neste caso à direita*/
-    transition: all .5s;
 }
 .menu ul li a{
-    font-family: Arial, sans-serif;
-    font-size: 25px;
-    color: #3b3b3b;
-    padding: 10px 20px;
+    padding: 1em 0em;
+    padding-left: 1.3em;
     display: block;
 }
-/*Para quando o mouse estiver em cima de um link do menu*/
-.menu ul li a:hover{
-    color: #ffffff;
+/*Logo Inferior*/
+.logo-inferior{
+    text-align: center; /*Por se comportar inline, text-align: center funciona*/
 }
-/*ìcones Redes Sociais*/
-#socialicon ul{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 20%;
-    align-items: flex-start;
-    bottom: 100px;
-    position: absolute;
+.logo-inferior img{
+    width: 5em;
+}
+/*Rodapé*/
+.footer span{
+    display: flex;
+    color: #0b354e;
+    justify-content: center;
+    font-size: 1.4em;
+}
+
+/*Itens de cada página*/
+/*Home*/
+/*Espaço do meio*/
+.middle-space{
+    padding: 15em 0;
+}
+/*Botões das redes sociais*/
+.social-buttons ul{
     display: flex;
     justify-content: center;
 }
-#socialicon ul li a{
-    padding: 10px 30px;
-    display: block;
+.social-buttons ul li{
+    padding: 4em 3em;
 }
-#socialicon img{
-    width: 100px;
-    transition: .5s;
+.social-buttons img{
+    width: 4.2em;
+    transition: all .5s;
 }
-#socialicon img:hover{
+.social-buttons img:hover{
     /*Zoom de aumento de 30%*/
     -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
 }
-/*Formulário Contato*/
-#contato{
-    float: left;
-    margin-left: 25px;
+/*Sobre*/
+#photo img{
+    border-radius: 1em;
+    width: 33em;
 }
-.letter{
-    text-align: left;
-    font-size: 20px;
-    margin-left: 25px;
+#about-text{
+    color: #ffffff;
+    font-size: 2.4em;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: justify;
 }
+.about-space{
+    padding: 10px 0px;
+}
+/*Portfólio*/
+.works{
+    text-align: center;
+}
+.works img{
+    width: 10em;
+    margin: 20px 0px;
+    transition: all .5s;
+}
+.works img:hover{
+    /*Zoom de aumento de 30%*/
+    -webkit-transform: scale(1.20);
+        -ms-transform: scale(1.20);
+        transform: scale(1.20);
+}
+#port-espace{
+    padding: 5em 0;
+}
+/*Contato*/
 label, input[type=submit], input[type=text], textarea{
     display: block; /*Exibe em blocos, um embaixo do outro*/
 }
 input[type=submit], input[type=text], textarea{
-    display: block; /*Exibe em blocos, um embaixo do outro*/
     border: 1px solid #9b9b9b;
     border-radius: 5px; /*Arredonda a borda*/
-    font-family: 'Comfortaa', cursive, sans-serif;
-    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-size: 1.4em;
+}
+input[type=submit]:hover, input[type=text]:hover, textarea:hover{
+    box-shadow: 1px 1px 3px #ffffff;
 }
 label{
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.8em;
     color: #ffffff;
 }
 input[type=text]{
-    width: 400px;
-    height: 25px;
-    margin-bottom: 20px;
+    width: 28em;
+    height: 2em;
+    margin-bottom: 10px;
 }
 input[type=submit]{
-    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 1.6em;
     color: #ffffff;
     cursor: pointer;
     border: none;
@@ -146,103 +278,27 @@ input[type=submit]:hover{
     background-color: #08273a;
 }
 textarea{
-    width: 400px;
-    height: 100px;
-}
-#phone{
-    float: left;
-    margin-left: 200px;
+    width: 28em;
+    height: 8em;
 }
 #phone p{
-    font-size: 21px;
-    margin-top: 30px;
+    font-size: 2em;
+    margin-top: 1em;
     text-align: right;
+    margin-bottom: 1em;
 }
-/*Conteúdo do site*/
-h1, p{
-    font-family: 'Comfortaa', cursive, sans-serif;
+/*Trabalhando a responividade do site*/
+@media(max-width: 1024px){
+    #about-text{
+        font-size: 2.1em;
+    }
 }
-h1{
-    font-weight: bold; 
-    font-size: 35px;
-    color: #0b354e; /*Esse é o azul do MM*/
-    text-transform: uppercase;
-    margin-left: 25px;
-}
-p{
-    color: #0b354e; /*Esse é o azul do MM*/
-}
-/*Sobre*/
-#about{
-    border-radius: 10px;
-    width: 900px;
-    height: 400px;
-    float: left;
-    margin-left: 25px;
-    position: static;
-    background-color: rgba(155, 155, 155, 0.5);
-}
-/*
-#about:hover{
-    background-color: rgba(155, 155, 155, 0.5);
-}
-*/
-#about p{
-    font-size: 23px;
-    text-align: justify;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px #000000;
-    float: left;
-    position: static;
-    width: 850px;
-    padding-left: 25px;
-}
-#photo{
-    float: left;
-    border-radius: 10px;
-    margin-left: 35px;
-}
-/*Portfolio*/
-#works ul{
-    text-align: center; /*Para centralizar a lista*/
-}
-#works ul li{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    padding: 10px 50px;
-}
-#works img{
-    width: 250px;
-    margin-top: 10px;
-    transition: all .5s;
-}
-#works img:hover{
-    /*Zoom de aumento de 30%*/
-    -webkit-transform: scale(1.20);
-        -ms-transform: scale(1.20);
-        transform: scale(1.20);
-}
-/*Logo inferior*/
-#logo{
-    display: flex;
-    justify-content: center;
-}
-#logo img{
-    width: 100px;
-}
-/*Rodapé do site*/
-footer{
-    bottom: 0px;
-    position: absolute;
-    width: 100%;
-}
-footer p{
-    text-align: center;
-    font-size: 14px;
-}
-@media(max-width: 1022px){
-    /*Enquanto menor a 1022px, o código abaixo que será usado*/
+@media(max-width: 768px){
+    /*Diminuir 35% de tudo*/
+    .container{
+        max-width: 100%;
+        padding: 0px 0px;
+    }
     header{
         background-color: #0b354e; /*Esse é o azul do MM*/
     }
@@ -251,16 +307,18 @@ footer p{
     }
     .menu ul{
         position: absolute;
-        background-color: #0b354e; /*Esse é o azul do MM*/
-        width: 25%;
+        width: 50%;
         flex-direction: column; /*O menu ficará em coluna*/
-        margin-left: -25%; /*Esconde o menu*/
+        margin-left: -50%; /*Esconde o menu*/
+        transition: all .5s;
     }
     .menu ul li a{
+        background-color: #0b354e; /*Esse é o azul do MM*/
         border-top: 1px solid #ffffff;
-        font-size: 20px;
+        font-size: 2em;
         color: #ffffff;
         padding: 3px;
+        border-radius: 5px;
     }
     .menu ul li a:hover{
         background-color: #3b3b3b;
@@ -268,71 +326,50 @@ footer p{
     #btn-menu:checked ~ .menu ul{
         margin-left: 0; /*Faz o menu aparecer somente quando clicar no símbolo de menu*/ 
     }
-    #socialicon ul li a{
-        padding: 5px 15px;
+    h1{
+        padding: 15px 0px;
     }
-    #socialicon img{
-        width: 70px;
-    }
-    #logo img{
-        width: 80px;
+    /*Sobre*/
+    #about-text{
+        font-size: 1.6em;
+        padding: 0px 3px;
     }
     #photo{
-        margin-left: 15px;
-        width: 250px;
+        text-align: center;
     }
-    #about{
-        width: 468px;
-        height: 315px;
+    /*Portfólio*/
+    .works img{
+        width: 7em;
     }
-    #about p{
-        font-size: 14.5px;
-        width: 418px;
-        padding-right: 15px;
-    }
-    h1{
-        margin-right: 15px;
-        text-align: right;
-    }
-    #works img{
-        width: 200px;
-    }
-    .letter{
-        font-size: 15px;
-    }
-    #phone{
-        margin-left: 90px;
-    }
+    /*Contato*/
     #phone p{
-        font-size: 15px;
-    }
-    input[type=text]{
-        width: 300px;
-        height: 20px;
-        margin-bottom: 10px;
-    }
-    textarea{
-        width: 300px;
-        height: 80px;
-    }
-    label{
-        font-size: 15px;
+        font-size: 2em;
+        text-align: left;
     }
 }
-@media(width: 1024px){
-    #about{
-        width: 616px;
-        height: 345px;
+@media(max-width: 400px){
+    /*Home*/
+    .social-buttons ul li{
+        padding: 4em 1.5em;
     }
-    #about p{
-        font-size: 17.5px;
-        width: 596px;
-        padding-left: 15px;
+    .social-buttons img:hover{
+        /*Zoom de aumento de 30%*/
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
     }
-    #phone{
-        margin-left: 70px;
+    h1{
+        text-align: right;
+        padding: 15px;
     }
-    #phone p{
-        font-size: 15px;
+    .message p{
+        text-align: justify;
+    }
+    /*Contato*/
+    input[type=text]{
+        width: 20em;
+    }
+    textarea{
+        width: 20em;
     }
 }

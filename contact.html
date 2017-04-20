@@ -4,102 +4,140 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="pt-br">
     <head>
         <title>Contato - Marco Macei</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Marco Aurélio Macei Duarte"/>
-        <meta name="description" content="Website pessoal de Marco Macei para apresentar seus projetos"/>
-        <meta name="keywords" content="website, Marco Macei, projetos, currículo, portfolio"/>
-        <link href="normalize.css" rel="stylesheet" type="text/css"/>
+        <meta name="description" content="Entre em contato com Marco Macei por e-mail ou telefone"/>
+        <meta name="keywords" content="website, Marco Macei, projetos, currículo, portfolio, contato, currículo, HTML, CSS"/>
         <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"/>
         <link href="style.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" href="favicon.png" type="image/x-png"/> <!--ícone na aba-->
     </head>
     <body id="othersCover">
-        <header>
-            <!--
-            Menu Superior
-            -->
-            <input type="checkbox" id="btn-menu"/>
-            <label for="btn-menu">&#9776;</label>
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="index.html" title="Home">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html" title="Sobre">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html" title="Portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" title="Contato">Contato</a>
-                    </li>
-                    <li>
-                        <a href="Marco_Currículo.pdf" title="Currículo" target="_blank">Currículo</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!--
-        Formulário de Contato
-        -->
-        <h1>
-            Contato
-        </h1>
-        <p class="letter">
-            Para entrar em contato, preencha os campos abaixo com seus dados
-            e o mais breve possível irei responder seu e-mail.
-        </p>
-        <div id="contato">
-
-            <form action="https://formspree.io/marcomacei@hotmail.com" method="post">
-                <label for="nome">Nome:</label>
-                <input id="nome" title="Por favor, preencha este campo" type="text" 
-                       placeholder="Nome Completo" name="nome" autofocus="autofocus" required=""/>
-
-                <label for="email">E-mail:</label>
-                <input id="email" title="Por favor, preencha este campo" type="text" 
-                       placeholder="Email" name="_replyto" required=""/>
-
-                <label for="assunto">Assunto:</label>
-                <input id="assunto" title="Por favor, preencha este campo" type="text" 
-                       placeholder="Assunto" name="assunto" required=""/>
-
-                <label for="msg">Mensagem:</label>
-                <textarea id="msg" title="Por favor, preencha este campo" name="msg" 
-                          placeholder="Mensagem" required=""></textarea>
-
-                <input type="submit" value="Enviar Mensagem"/>
-            </form>
-        </div>
-
-        <div id="phone">
-            <p>
-                Ou se preferir, entre em contato pelo telefone:
-            </p>
-            <p>
-                (11)97190-0308
-            </p>
-        </div>
-        <!--
-        Rodapé do site
-        -->
-        <footer>
-            <!--
-            Logo inferior
-            -->
-            <div id="logo">
-                <a href="index.html" title="Marco Macei">
-                    <img src="logo.png" alt="Logo" >
-                </a>
+        <!--Menu Superior-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <header>
+                        <input type="checkbox" id="btn-menu"/>
+                        <label for="btn-menu">&#9776;</label>
+                        <nav class="menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html" title="Home">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html" title="Sobre">Sobre</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html" title="Portfolio">Portfólio</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" title="Contato">Contato</a>
+                                </li>
+                                <li>
+                                    <a href="Marco_Currículo.pdf" title="Currículo" target="_blank">Currículo</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
             </div>
-            <p>
-                2017 - marcomacei.com
-            </p>
-        </footer>
+        </div>
+        
+        <!--Título da página-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>
+                        Contato
+                    </h1>
+                </div>
+            </div>
+        </div>
+        
+        <!--Mensagem-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="message">
+                        <p>
+                            Para entrar em contato, preencha os campos abaixo com seus dados
+                            e o mais breve possível irei responder seu e-mail. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Contato-->
+        <div class="container">
+            <div class="row">
+                <div class="col col-form-contact">
+                    <div id="contato">
+                        <form action="https://formspree.io/marcomacei@hotmail.com" method="post">
+                            <label for="nome">Nome:</label>
+                            <input id="nome" title="Por favor, preencha este campo" type="text" 
+                                   placeholder="Nome Completo" name="nome" autofocus="autofocus" required=""/>
+
+                            <label for="email">E-mail:</label>
+                            <input id="email" title="Por favor, preencha este campo" type="text" 
+                                   placeholder="Email" name="_replyto" required=""/>
+
+                            <label for="assunto">Assunto:</label>
+                            <input id="assunto" title="Por favor, preencha este campo" type="text" 
+                                   placeholder="Assunto" name="assunto" required=""/>
+
+                            <label for="msg">Mensagem:</label>
+                            <textarea id="msg" title="Por favor, preencha este campo" name="msg" 
+                                      placeholder="Mensagem" required=""></textarea>
+
+                            <input type="submit" value="Enviar Mensagem"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="col col-other-contact">
+                    <div id="phone">
+                        <p>
+                            Ou se preferir, entre em contato pelo telefone:
+                        </p>
+                        <p>
+                            (11)97190-0308
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Logo Inferior-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="logo-inferior">
+                        <a href="index.html" title="Marco Macei">
+                            <img src="logo.png" alt="Logo" >
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Rodapé-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer">
+                        <footer>
+                            <span>
+                                2017 - marcomacei.com
+                            </span>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
